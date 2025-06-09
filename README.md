@@ -80,7 +80,7 @@ Este es un sistema de evaluación educativa desarrollado en Java utilizando Swin
 	 );
 
  4) Configurar conexión en el código
- 5) 
+  
 	 En el método "Conexión.java" asegúrate de que los datos de conexión coincidan con tu entorno local:
 
 	 	 String url = "jdbc:mysql://[hostname]:[port]/sistema_evaluaciones";
