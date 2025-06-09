@@ -60,13 +60,13 @@ Este es un sistema de evaluación educativa desarrollado en Java utilizando Swin
 
  Para que el sistema funcione correctamente, se debe crear e inicializar una base de datos en MySQL con las tablas necesarias. A continuación se detalla cómo hacerlo.
 
- 1) Conéctate a tu servidor MySQL y ejecuta:
+ 	1) Conéctate a tu servidor MySQL y ejecuta:
 
  	 CREATE DATABASE sistema_evaluaciones;
 	 USE sistema_evaluaciones;
 
- 2) Crear las tablas necesarias
- 3) 
+ 	2) Crear las tablas necesarias
+  
 	 CREATE TABLE preguntas (
 	     Id INT AUTO_INCREMENT PRIMARY KEY,
 	     Pregunta VARCHAR(255) NOT NULL,
@@ -79,7 +79,7 @@ Este es un sistema de evaluación educativa desarrollado en Java utilizando Swin
 	     Tiempo INT
 	 );
 
- 4) Configurar conexión en el código
+ 	4) Configurar conexión en el código
   
 	 En el método "Conexión.java" asegúrate de que los datos de conexión coincidan con tu entorno local:
 
