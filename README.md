@@ -89,6 +89,6 @@ Este es un sistema de evaluación educativa desarrollado en Java utilizando Swin
 
 -----------------
 8.Autores
- -Matias Sanhueza
- -Tomas Ramirez
- -José Tomas Serri
+ - Matias Sanhueza 
+ - Tomas Ramirez 
+ - José Tomas Serri
