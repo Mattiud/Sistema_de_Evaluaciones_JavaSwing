@@ -36,9 +36,13 @@ Este es un sistema de evaluación educativa desarrollado en Java utilizando Swin
 5.Estructura de Proyecto
 
  src/
+ 
  ├── Main/              --> Lanza el programa (Main.java)
+ 
  ├── Modelo/            --> Clases de datos (Pregunta.java, PreguntaExamen.java, Modelo.java, ListarPreguntas.java, ListarCreacion.java)
+ 
  ├── Controlador/       --> Lógica de control (Conexion.java, Control.java, ControlCreacion.java, ControlExamen.java)
+ 
  ├── Interfaz/          --> Interfaces gráficas (InterfazPrincipal.java, InterfazExamen.java, InterfazCreacion.java)
 
 -----------------
