@@ -26,14 +26,7 @@ public class ControlExamen {
         return preguntaSeleccionada;
     }
     
-    public int tiempoTotal(){
-        int total = 0;
-        for (Pregunta p : preguntaSeleccionada){
-            total += p.getTiempo();
-        }
-        return total;
-    }
-    
+     
     public void limpiarPregunta(){
         preguntaSeleccionada.clear();
     }

@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 public class Conexion {
     Connection cn;
     String user="root";
-    String password="Contraseña";
+    String password="contraseña";
     String driver="com.mysql.cj.jdbc.Driver";
     String url="jdbc:mysql://127.0.0.1:3306/preguntas";
     

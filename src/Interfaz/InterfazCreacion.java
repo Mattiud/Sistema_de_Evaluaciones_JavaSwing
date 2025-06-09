@@ -65,9 +65,14 @@ public class InterfazCreacion extends javax.swing.JFrame {
         BTNELIMPREG = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         TABLAPREGUNTAS = new javax.swing.JTable();
+        jLabel2 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Creacion de Examen");
 
+        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
+
+        TABLAPREGSELECT.setBackground(new java.awt.Color(0, 204, 204));
         TABLAPREGSELECT.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -79,23 +84,39 @@ public class InterfazCreacion extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        TABLAPREGSELECT.setSelectionBackground(new java.awt.Color(153, 255, 255));
+        TABLAPREGSELECT.setShowGrid(true);
         jScrollPane1.setViewportView(TABLAPREGSELECT);
 
         TXTTIEMPOTOTAL.setEditable(false);
+        TXTTIEMPOTOTAL.setBackground(new java.awt.Color(204, 204, 204));
+        TXTTIEMPOTOTAL.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        TXTTIEMPOTOTAL.setBorder(null);
         TXTTIEMPOTOTAL.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TXTTIEMPOTOTALActionPerformed(evt);
             }
         });
 
-        jLabel1.setText("Tiempo Total");
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
+        jLabel1.setText("SEGUNDOS");
 
+        BTNINICIAR.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         BTNINICIAR.setText("Iniciar Examen");
+        BTNINICIAR.setBorder(new javax.swing.border.MatteBorder(null));
 
+        BTNSELECT.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         BTNSELECT.setText("Seleccionar Pregunta");
+        BTNSELECT.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
+        BTNELIMPREG.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         BTNELIMPREG.setText("Eliminar Pregunta");
+        BTNELIMPREG.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        BTNELIMPREG.setMaximumSize(new java.awt.Dimension(157, 27));
+        BTNELIMPREG.setMinimumSize(new java.awt.Dimension(157, 27));
+        BTNELIMPREG.setPreferredSize(new java.awt.Dimension(157, 27));
 
+        TABLAPREGUNTAS.setBackground(new java.awt.Color(204, 102, 0));
         TABLAPREGUNTAS.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -104,10 +125,15 @@ public class InterfazCreacion extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "", "Title 2", "Title 3", "Title 4"
             }
         ));
+        TABLAPREGUNTAS.setSelectionBackground(new java.awt.Color(255, 153, 102));
+        TABLAPREGUNTAS.setShowGrid(true);
         jScrollPane2.setViewportView(TABLAPREGUNTAS);
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
+        jLabel2.setText("Tiempo Total");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -116,21 +142,23 @@ public class InterfazCreacion extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(78, 78, 78)
-                        .addComponent(BTNSELECT)
-                        .addGap(130, 130, 130)
-                        .addComponent(BTNELIMPREG, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 525, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(205, 205, 205)
-                        .addComponent(BTNINICIAR))
+                        .addGap(163, 163, 163)
+                        .addComponent(jLabel2)
+                        .addGap(18, 18, 18)
+                        .addComponent(TXTTIEMPOTOTAL, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(193, 193, 193)
-                        .addComponent(jLabel1)
-                        .addGap(27, 27, 27)
-                        .addComponent(TXTTIEMPOTOTAL, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(174, 174, 174)
+                        .addComponent(BTNINICIAR, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(63, 63, 63)
+                        .addComponent(BTNSELECT, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(95, 95, 95)
+                        .addComponent(BTNELIMPREG, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(576, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -144,16 +172,17 @@ public class InterfazCreacion extends javax.swing.JFrame {
                 .addGap(35, 35, 35)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TXTTIEMPOTOTAL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addGap(80, 80, 80)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2))
+                .addGap(43, 43, 43)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BTNSELECT)
-                    .addComponent(BTNELIMPREG))
+                    .addComponent(BTNELIMPREG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(49, 49, 49)
-                .addComponent(BTNINICIAR, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(56, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
+                .addComponent(BTNINICIAR, javax.swing.GroupLayout.DEFAULT_SIZE, 94, Short.MAX_VALUE)
+                .addGap(24, 24, 24))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addContainerGap()
@@ -222,6 +251,7 @@ public class InterfazCreacion extends javax.swing.JFrame {
     public javax.swing.JTable TABLAPREGUNTAS;
     public javax.swing.JTextField TXTTIEMPOTOTAL;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;

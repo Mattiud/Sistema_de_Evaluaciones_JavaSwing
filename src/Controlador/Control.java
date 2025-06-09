@@ -204,6 +204,7 @@ public class Control implements ActionListener, ListSelectionListener {
                 int respCorrecta = Integer.parseInt(modelo.getValueAt(fila, 6).toString());
                 setRespuestaCorrectaRadio(respCorrecta);
                 
+                                
                 rp.TXTTIEMPO.setText(modelo.getValueAt(fila, 7).toString());
                 rp.CBNVL.setSelectedItem(modelo.getValueAt(fila, 8).toString());
                 

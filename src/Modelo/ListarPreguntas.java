@@ -1,5 +1,6 @@
 package Modelo;
 import Controlador.Conexion;
+import Interfaz.InterfazPrincipal;
 import java.sql.Connection;
 import java.sql.Statement;
 import java.sql.ResultSet;
