@@ -66,6 +66,7 @@ Este es un sistema de evaluación educativa desarrollado en Java utilizando Swin
 	 USE sistema_evaluaciones;
 
  2) Crear las tablas necesarias
+ 3) 
 	 CREATE TABLE preguntas (
 	     Id INT AUTO_INCREMENT PRIMARY KEY,
 	     Pregunta VARCHAR(255) NOT NULL,
@@ -78,7 +79,8 @@ Este es un sistema de evaluación educativa desarrollado en Java utilizando Swin
 	     Tiempo INT
 	 );
 
- 3) Configurar conexión en el código
+ 4) Configurar conexión en el código
+ 5) 
 	 En el método "Conexión.java" asegúrate de que los datos de conexión coincidan con tu entorno local:
 
 	 	 String url = "jdbc:mysql://[hostname]:[port]/sistema_evaluaciones";
