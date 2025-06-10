@@ -75,7 +75,7 @@ Este es un sistema de evaluación educativa desarrollado en Java utilizando Swin
 	     Respuesta3 VARCHAR(255) NOT NULL,
 	     Respuesta4 VARCHAR(255) NOT NULL,
 	     RespuestaCorrecta VARCHAR(255) NOT NULL,
-	     nivelBloom VARCHAR(50) NOT NULL,
+	     NivelBloom VARCHAR(50) NOT NULL,
 	     Tiempo INT
 	 );
 
