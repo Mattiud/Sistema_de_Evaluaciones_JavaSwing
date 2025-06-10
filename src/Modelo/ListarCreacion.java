@@ -9,7 +9,7 @@ import javax.swing.JTable;
 
 
 public class ListarCreacion {
-    
+
   public void MostrarTabla(JTable TABLAPREGUNTAS){
     Conexion con = new Conexion();
     DefaultTableModel modelo = new DefaultTableModel();
@@ -17,9 +17,9 @@ public class ListarCreacion {
     modelo.addColumn("PREGUNTA");
     modelo.addColumn("TIEMPO");
     modelo.addColumn("NIVEL DE BLOOM");
-    
+
     String consulta="SELECT * FROM pregunta";
-    
+
     Statement st;
     try{
       Connection cn = con.Conex();
@@ -40,9 +40,8 @@ public class ListarCreacion {
     }catch(Exception e){
        System.out.print("Error "+e);
     }
-    
-    
-    
+
+
+
   }
 }
-

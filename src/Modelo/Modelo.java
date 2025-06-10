@@ -1,4 +1,3 @@
-
 package Modelo;
 import Controlador.Conexion;
 import java.sql.Connection;
@@ -7,7 +6,7 @@ import javax.swing.JOptionPane;
 public class Modelo {
   Conexion con = new Conexion();
   Connection cn = con.Conex();
-    
+
   public void RegistrarBD(Pregunta p){
    try{
     String consulta;
@@ -34,7 +33,7 @@ public class Modelo {
     String consulta;
         consulta = "UPDATE pregunta SET Pregunta=?, Respuesta1=?, Respuesta2=?, Respuesta3=?, Respuesta4=?, RespuestaCorrecta=?, Tiempo=?, NivelBloom=? WHERE Id="+p.getId()+" ";
     PreparedStatement ps = cn.prepareStatement(consulta);
-    
+
     ps.setString(1, p.getPregunta());
     ps.setString(2, p.getRespuesta1());
     ps.setString(3, p.getRespuesta2());

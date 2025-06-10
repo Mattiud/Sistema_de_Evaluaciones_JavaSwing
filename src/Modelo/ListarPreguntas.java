@@ -1,6 +1,5 @@
 package Modelo;
 import Controlador.Conexion;
-import Interfaz.InterfazPrincipal;
 import java.sql.Connection;
 import java.sql.Statement;
 import java.sql.ResultSet;
@@ -9,7 +8,7 @@ import javax.swing.JTable;
 
 
 public class ListarPreguntas {
-    
+
   public void MostrarTabla(JTable TABLA){
     Conexion con = new Conexion();
     DefaultTableModel modelo = new DefaultTableModel();
@@ -22,9 +21,9 @@ public class ListarPreguntas {
     modelo.addColumn("RESPUESTA CORRECTA");
     modelo.addColumn("Tiempo");
     modelo.addColumn("NivelBloom");
-    
+
     String consulta="SELECT * FROM pregunta";
-    
+
     Statement st;
     try{
       Connection cn = con.Conex();
@@ -49,9 +48,8 @@ public class ListarPreguntas {
     }catch(Exception e){
        System.out.print("Error "+e);
     }
-    
-    
-    
+
+
+
   }
 }
-

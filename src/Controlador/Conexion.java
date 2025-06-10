@@ -8,7 +8,7 @@ public class Conexion {
     String password="contraseña";
     String driver="com.mysql.cj.jdbc.Driver";
     String url="jdbc:mysql://127.0.0.1:3306/preguntas";
-    
+
     public Connection Conex(){
         try{
          //Class.forName("com.mysql.cj.jdbc.Driver");
@@ -19,5 +19,5 @@ public class Conexion {
         }
         return cn;
     }
-    
+
 }

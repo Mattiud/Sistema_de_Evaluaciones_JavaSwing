@@ -10,12 +10,12 @@ public class Pregunta {
     private int RespuestaCorrecta;
     private int Tiempo;
     private String NivelBloom;
-   
+
     public Pregunta(){
-        
+
     }
-    
-    
+
+
     public Pregunta(int Id,String Preg,String Resp1, String Resp2, String Resp3, String Resp4, int RespC, int Tiempo, String NivelBloom){
         this.Id = Id;
         this.Pregunta = Preg;
@@ -59,7 +59,7 @@ public class Pregunta {
     public void setRespuesta2(String Respuesta2) {
         this.Respuesta2 = Respuesta2;
     }
-    
+
     public String getRespuesta3() {
         return Respuesta3;
     }
@@ -67,7 +67,7 @@ public class Pregunta {
     public void setRespuesta3(String Respuesta3) {
         this.Respuesta3 = Respuesta3;
     }
-    
+
     public String getRespuesta4() {
         return Respuesta4;
     }
@@ -83,19 +83,19 @@ public class Pregunta {
     public void setRespuestaCorrecta(int RespuestaCorrecta) {
         this.RespuestaCorrecta = RespuestaCorrecta;
     }
-    
+
     public int getTiempo(){
         return Tiempo;
     }
-    
+
     public void setTiempo(int Tiempo){
         this.Tiempo = Tiempo;
     }
-    
+
     public String getNivelBloom(){
         return NivelBloom;
     }
-    
+
     public void setNivelBloom(String NivelBloom){
         this.NivelBloom = NivelBloom;
     }

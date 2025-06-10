@@ -26,7 +26,7 @@ public class InterfazExamen extends javax.swing.JFrame {
             
             for (int i = 0; i < preguntas.size(); i++) {
                 respuestasAlumno.add(-1); 
-}
+            }
 
 
         initComponents();
@@ -388,6 +388,10 @@ public class InterfazExamen extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(InterfazExamen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>

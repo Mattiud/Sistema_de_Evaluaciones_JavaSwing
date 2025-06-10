@@ -25,10 +25,10 @@ import java.sql.Connection;
 
 
 public class Control implements ActionListener, ListSelectionListener {  
-    
-    
 
-    
+
+
+
     private InterfazCreacion ic;
 
     public void setInterfazCreacion(InterfazCreacion ic) {
@@ -74,7 +74,7 @@ public class Control implements ActionListener, ListSelectionListener {
         int respCorrecta = obtenerRespuestaCorrecta();
         int tiempo = Integer.parseInt(rp.TXTTIEMPO.getText().trim());
         String nivelBloom = (String)rp.CBNVL.getSelectedItem();
-                
+
         return new Pregunta(id, pregunta, resp1, resp2, resp3, resp4, respCorrecta, tiempo, nivelBloom);
     }
 
@@ -111,32 +111,32 @@ public class Control implements ActionListener, ListSelectionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         Modelo reg = new Modelo();
-        
+
         if (e.getSource() == rp.BTNvf){
-            
+
             rp.TXTRESP1.setText("Verdadero");
             rp.TXTRESP2.setText("Falso");
-            
+
             rp.TXTRESP3.setEnabled(false);
             rp.TXTRESP3.setText("");
             rp.TXTRESP4.setEnabled(false);
             rp.TXTRESP4.setText("");
-            
+
             rp.RBTNRESP3.setEnabled(false);
             rp.RBTNRESP4.setEnabled(false);
         }
-        
+
         if (e.getSource() == rp.BTNseleccionmultiple){
-            
+
             rp.TXTRESP1.setText("");
             rp.TXTRESP2.setText("");
-            
+
             rp.TXTRESP3.setEnabled(true);
             rp.TXTRESP4.setEnabled(true);
-            
+
             rp.RBTNRESP3.setEnabled(true);
             rp.RBTNRESP4.setEnabled(true);
-            
+
         }
 
         if (e.getSource() == rp.BTNGUAR) {
@@ -176,8 +176,8 @@ public class Control implements ActionListener, ListSelectionListener {
         if (e.getSource() == rp.BTNLIMP) {
             limpiarCampos();
         }
-        
-        
+
+
         if (e.getSource() == rp.BTNCREAREX) {
             if (ic != null) {
                 ic.setVisible(true);
@@ -200,14 +200,13 @@ public class Control implements ActionListener, ListSelectionListener {
                 rp.TXTRESP2.setText(modelo.getValueAt(fila, 3).toString());
                 rp.TXTRESP3.setText(modelo.getValueAt(fila, 4).toString());
                 rp.TXTRESP4.setText(modelo.getValueAt(fila, 5).toString());
-                
+
                 int respCorrecta = Integer.parseInt(modelo.getValueAt(fila, 6).toString());
                 setRespuestaCorrectaRadio(respCorrecta);
-                
-                                
+
                 rp.TXTTIEMPO.setText(modelo.getValueAt(fila, 7).toString());
                 rp.CBNVL.setSelectedItem(modelo.getValueAt(fila, 8).toString());
-                
+
 
                 rp.BTNGUAR.setEnabled(false);
                 rp.BTNMODI.setEnabled(true);
@@ -215,8 +214,8 @@ public class Control implements ActionListener, ListSelectionListener {
             }
         }
     }
-        
-        
+
+
 
     public static List<Pregunta> obtenerPreguntasPorIds(List<Integer> ids) {
         List<Pregunta> preguntas = new ArrayList<>();
@@ -261,4 +260,3 @@ public class Control implements ActionListener, ListSelectionListener {
         return preguntas;
     }
 }
-

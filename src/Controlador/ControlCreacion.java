@@ -23,13 +23,13 @@ public class ControlCreacion implements ActionListener {
 
         cargarTodasLasPreguntas(); 
 
-        
+
         this.ic.BTNSELECT.addActionListener(this);
         this.ic.BTNELIMPREG.addActionListener(this);
         this.ic.BTNINICIAR.addActionListener(this);
     }
 
-    
+
     private void cargarTodasLasPreguntas() {
         modeloPreguntas.MostrarTabla(ic.TABLAPREGUNTAS);
     }
@@ -163,4 +163,3 @@ public class ControlCreacion implements ActionListener {
         }
     }
 }
-
