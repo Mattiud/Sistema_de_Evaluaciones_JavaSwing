@@ -28,7 +28,9 @@ Este es un sistema de evaluación educativa desarrollado en Java utilizando Swin
  - Java JDK 21
  - IDE compatible con Java Swing (recomendado: NetBeans)
  - Librerías externas: 
- 	 - mysql-connector-j-9.3.0.jar
+ 	 -mysql-connector-j-9.3.0.jar
+	  Descárgalo desde: https://dev.mysql.com/downloads/connector/j/
+	  (Si utilizas Windows, elige la opción Platform Independent)
  - Sistema operativo: Windows
  - Git (opcional, para clonar el proyecto)
 
@@ -50,9 +52,9 @@ Este es un sistema de evaluación educativa desarrollado en Java utilizando Swin
 
  1) Clona el repositorio:
 	 https://github.com/Mattiud/Sistema_de_Evaluaciones_JavaSwing.git
- 2) Abre el proyecto en NetBeans u otro IDE compatible con Java Swing
- 3) Añade las librerías externas ubicadas en dist/lib
- 4) Ejecuta la clase Main.java
+ 2) Crea un nuevo proyecto en NetBeans (o en otro IDE compatible con Java Swing) y copia el contenido de la carpeta src/ del repositorio a la carpeta src/ de tu nuevo proyecto.
+ 3) Añade las librerías externas indicadas en la sección 4.Requisitos.
+ 4) Ejecuta la clase Main.java como clase Principal.
 
 -----------------
 
