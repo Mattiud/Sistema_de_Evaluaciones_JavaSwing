@@ -105,14 +105,14 @@ Este es un sistema de evaluación educativa desarrollado en Java utilizando Swin
 		
 		
 		-- VERDADERO/FALSO
-		INSERT INTO pregunta VALUES
+		INSERT INTO pregunta (Pregunta, Respuesta1, Respuesta2, Respuesta3, Respuesta4, RespuestaCorrecta, NivelBloom, Tiempo) VALUES
 		('Las plantas necesitan luz para hacer la fotosíntesis.', 'Verdadero', 'Falso', '', '', 1, 'Entender', 25),
 		('El corazón humano bombea sangre.', 'Verdadero', 'Falso', '', '', 1, 'Entender', 20),
 		('Los seres vivos no necesitan agua para vivir.', 'Verdadero', 'Falso', '', '', 2, 'Entender', 20),
 		('Los animales carnívoros comen plantas.', 'Verdadero', 'Falso', '', '', 2, 'Entender', 20);
 		
 		-- SELECCIÓN MÚLTIPLE
-		INSERT INTO pregunta VALUES
+		INSERT INTO pregunta (Pregunta, Respuesta1, Respuesta2, Respuesta3, Respuesta4, RespuestaCorrecta, NivelBloom, Tiempo) VALUES
 		('¿Por qué el sol se ve más grande al atardecer?', 'Porque se acerca a la Tierra', 'Porque está más caliente', 'Por un efecto óptico', 'Porque cambia de tamaño', 3, 'Entender', 30),
 		('¿Qué representa la bandera de un país?', 'Un animal', 'Una planta', 'La identidad nacional', 'Una comida típica', 3, 'Entender', 20),
 		('¿Qué pasa cuando mezclamos azul y amarillo?', 'Rojo', 'Verde', 'Naranja', 'Blanco', 2, 'Entender', 15),
@@ -120,14 +120,14 @@ Este es un sistema de evaluación educativa desarrollado en Java utilizando Swin
 		
 		
 		-- VERDADERO/FALSO
-		INSERT INTO pregunta VALUES
+		INSERT INTO pregunta (Pregunta, Respuesta1, Respuesta2, Respuesta3, Respuesta4, RespuestaCorrecta, NivelBloom, Tiempo) VALUES
 		('Puedo usar una regla para medir la longitud de una hoja.', 'Verdadero', 'Falso', '', '', 1, 'Aplicar', 20),
 		('Para saber cuánta agua hay en una botella uso una balanza.', 'Verdadero', 'Falso', '', '', 2, 'Aplicar', 20),
 		('Las fracciones se pueden usar para repartir una pizza.', 'Verdadero', 'Falso', '', '', 1, 'Aplicar', 20),
 		('El microscopio se usa para ver objetos grandes.', 'Verdadero', 'Falso', '', '', 2, 'Aplicar', 20);
 		
 		-- SELECCIÓN MÚLTIPLE
-		INSERT INTO pregunta VALUES
+		INSERT INTO pregunta (Pregunta, Respuesta1, Respuesta2, Respuesta3, Respuesta4, RespuestaCorrecta, NivelBloom, Tiempo) VALUES
 		('¿Qué herramienta usarías para medir la temperatura?', 'Regla', 'Termómetro', 'Balanza', 'Compás', 2, 'Aplicar', 20),
 		('¿Cuál operación usarías para repartir dulces entre amigos?', 'Suma', 'Resta', 'Multiplicación', 'División', 4, 'Aplicar', 25),
 		('¿Qué objeto usarías para observar planetas?', 'Telescopio', 'Microscopio', 'Lupa', 'Cámara', 1, 'Aplicar', 25),
@@ -135,14 +135,14 @@ Este es un sistema de evaluación educativa desarrollado en Java utilizando Swin
 		
 		
 		-- VERDADERO/FALSO
-		INSERT INTO pregunta VALUES
+		INSERT INTO pregunta (Pregunta, Respuesta1, Respuesta2, Respuesta3, Respuesta4, RespuestaCorrecta, NivelBloom, Tiempo) VALUES
 		('Los cuentos siempre terminan con la misma estructura.', 'Verdadero', 'Falso', '', '', 2, 'Analizar', 25),
 		('Una gráfica ayuda a interpretar datos.', 'Verdadero', 'Falso', '', '', 1, 'Analizar', 20),
 		('Los insectos y los mamíferos tienen el mismo número de patas.', 'Verdadero', 'Falso', '', '', 2, 'Analizar', 20),
 		('Los mapas solo sirven para decorar.', 'Verdadero', 'Falso', '', '', 2, 'Analizar', 20);
 		
 		-- SELECCIÓN MÚLTIPLE
-		INSERT INTO pregunta VALUES
+		INSERT INTO pregunta (Pregunta, Respuesta1, Respuesta2, Respuesta3, Respuesta4, RespuestaCorrecta, NivelBloom, Tiempo) VALUES
 		('¿Qué parte del texto muestra el conflicto?', 'Introducción', 'Nudo', 'Desenlace', 'Título', 2, 'Analizar', 30),
 		('¿Cuál opción contiene solo animales herbívoros?', 'León, Tigre, Puma', 'Vaca, Conejo, Caballo', 'Perro, Gato, Ratón', 'Águila, Halcón, Búho', 2, 'Analizar', 25),
 		('¿Qué sucede si eliminamos el sujeto de una oración?', 'No cambia', 'Pierde sentido', 'Se vuelve más clara', 'Se convierte en pregunta', 2, 'Analizar', 25),
@@ -150,14 +150,14 @@ Este es un sistema de evaluación educativa desarrollado en Java utilizando Swin
 		
 		
 		-- VERDADERO/FALSO
-		INSERT INTO pregunta VALUES
+		INSERT INTO pregunta (Pregunta, Respuesta1, Respuesta2, Respuesta3, Respuesta4, RespuestaCorrecta, NivelBloom, Tiempo) VALUES
 		('Revisar el trabajo antes de entregarlo es innecesario.', 'Verdadero', 'Falso', '', '', 2, 'Evaluar', 20),
 		('Comparar dos ideas ayuda a tomar decisiones.', 'Verdadero', 'Falso', '', '', 1, 'Evaluar', 25),
 		('Una fuente confiable siempre es una red social.', 'Verdadero', 'Falso', '', '', 2, 'Evaluar', 25),
 		('Pensar en consecuencias es parte de evaluar una acción.', 'Verdadero', 'Falso', '', '', 1, 'Evaluar', 30);
 		
 		-- SELECCIÓN MÚLTIPLE
-		INSERT INTO pregunta VALUES
+		INSERT INTO pregunta (Pregunta, Respuesta1, Respuesta2, Respuesta3, Respuesta4, RespuestaCorrecta, NivelBloom, Tiempo) VALUES
 		('¿Qué criterio es mejor para elegir un libro?', 'Color de la portada', 'Recomendación de amigos', 'Tamaño del libro', 'Estilo de letra', 2, 'Evaluar', 30),
 		('¿Qué es lo más importante al resolver un conflicto?', 'Gritar', 'Escuchar a ambos', 'Imponer mi opinión', 'Ignorar el problema', 2, 'Evaluar', 25),
 		('¿Cuál es una señal de que una fuente es confiable?', 'Muchos likes', 'Nombre conocido', 'Cita con evidencia', 'Comentario divertido', 3, 'Evaluar', 30),
@@ -165,14 +165,14 @@ Este es un sistema de evaluación educativa desarrollado en Java utilizando Swin
 		
 		
 		-- VERDADERO/FALSO
-		INSERT INTO pregunta VALUES
+		INSERT INTO pregunta (Pregunta, Respuesta1, Respuesta2, Respuesta3, Respuesta4, RespuestaCorrecta, NivelBloom, Tiempo) VALUES
 		('Crear una historia original requiere imaginación.', 'Verdadero', 'Falso', '', '', 1, 'Crear', 30),
 		('Diseñar un experimento implica seguir pasos.', 'Verdadero', 'Falso', '', '', 1, 'Crear', 30),
 		('Inventar una solución no necesita creatividad.', 'Verdadero', 'Falso', '', '', 2, 'Crear', 25),
 		('Para crear una canción solo se necesita copiar otra.', 'Verdadero', 'Falso', '', '', 2, 'Crear', 25);
 		
 		-- SELECCIÓN MÚLTIPLE
-		INSERT INTO pregunta VALUES
+		INSERT INTO pregunta (Pregunta, Respuesta1, Respuesta2, Respuesta3, Respuesta4, RespuestaCorrecta, NivelBloom, Tiempo) VALUES
 		('¿Qué es necesario para escribir un poema?', 'Copiar uno existente', 'Tener ideas propias', 'Buscar palabras difíciles', 'No usar emociones', 2, 'Crear', 30),
 		('¿Qué harías para resolver un problema de basura en tu escuela?', 'Ignorarlo', 'Esperar que otro lo haga', 'Proponer un plan de reciclaje', 'Echarle la culpa a otros', 3, 'Crear', 30),
 		('¿Cómo podrías representar una historia?', 'Con dibujos', 'Con chismes', 'Con gritos', 'Con símbolos sin sentido', 1, 'Crear', 25),
