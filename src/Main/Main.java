@@ -2,6 +2,7 @@ package Main;
 
 import Interfaz.InterfazPrincipal;
 import Interfaz.InterfazCreacion;
+import Modelo.ListarPreguntas;
 import Controlador.Control;
 import Controlador.ControlCreacion;
 
@@ -12,6 +13,8 @@ public class Main {
             // Crear ventana principal
             InterfazPrincipal principal = new InterfazPrincipal();
             Control controlPrincipal = new Control(principal);
+            
+            ListarPreguntas listar = new ListarPreguntas();
 
             // Crear ventana creación (pero no mostrar aún)
             InterfazCreacion creacion = new InterfazCreacion();
@@ -22,6 +25,10 @@ public class Main {
 
             // Mostrar ventana principal
             principal.setVisible(true);
+            listar.MostrarTabla(principal.TABLA);
+
+
+
         });
     }
 }

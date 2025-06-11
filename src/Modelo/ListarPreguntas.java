@@ -31,15 +31,15 @@ public class ListarPreguntas {
       ResultSet rs = st.executeQuery(consulta);
       while (rs.next()){
           Object [] lista={
-              rs.getInt("Id"),
-              rs.getString("Pregunta"),
-              rs.getString("Respuesta1"),
-              rs.getString("Respuesta2"),
-              rs.getString("Respuesta3"),
-              rs.getString("Respuesta4"),
-              rs.getInt("RespuestaCorrecta"),
-              rs.getInt("Tiempo"),
-              rs.getString("NivelBloom")
+              rs.getInt(1),
+              rs.getString(2),
+              rs.getString(3),
+              rs.getString(4),
+              rs.getString(5),
+              rs.getString(6),
+              rs.getInt(7),
+              rs.getInt(8),
+              rs.getString(9)
           };
           modelo.addRow(lista);
       }

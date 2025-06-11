@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 public class Conexion {
     Connection cn;
     String user="root";
-    String password="contraseña";
+    String password="mysql";
     String driver="com.mysql.cj.jdbc.Driver";
     String url="jdbc:mysql://127.0.0.1:3306/preguntas";
 
@@ -15,7 +15,7 @@ public class Conexion {
          cn = (Connection)DriverManager.getConnection(url,user,password);
          System.out.println("Conexion Exitosa");
         }catch(Exception e){
-         System.err.println("Error"+e.getMessage());
+         System.err.println("Error "+e.getMessage());
         }
         return cn;
     }

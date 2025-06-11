@@ -241,15 +241,15 @@ public class Control implements ActionListener, ListSelectionListener {
 
             while (rs.next()) {
                 Pregunta p = new Pregunta();
-                p.setId(rs.getInt("id"));
-                p.setPregunta(rs.getString("pregunta"));
-                p.setRespuesta1(rs.getString("respuesta1"));
-                p.setRespuesta2(rs.getString("respuesta2"));
-                p.setRespuesta3(rs.getString("respuesta3"));
-                p.setRespuesta4(rs.getString("respuesta4"));
-                p.setRespuestaCorrecta(rs.getInt("respuestaCorrecta"));
-                p.setTiempo(rs.getInt("tiempo"));
-                p.setNivelBloom(rs.getString("nivelBloom"));
+                p.setId(rs.getInt("Id"));
+                p.setPregunta(rs.getString("Pregunta"));
+                p.setRespuesta1(rs.getString("Respuesta1"));
+                p.setRespuesta2(rs.getString("Respuesta2"));
+                p.setRespuesta3(rs.getString("Respuesta3"));
+                p.setRespuesta4(rs.getString("Respuesta4"));
+                p.setRespuestaCorrecta(rs.getInt("RespuestaCorrecta"));
+                p.setTiempo(rs.getInt("Tiempo"));
+                p.setNivelBloom(rs.getString("NivelBloom"));
                 preguntas.add(p);
             }
 
