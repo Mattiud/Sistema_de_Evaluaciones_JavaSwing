@@ -60,26 +60,26 @@ Este es un sistema de evaluación educativa desarrollado en Java utilizando Swin
 
  Para que el sistema funcione correctamente, se debe crear e inicializar una base de datos en MySQL con las tablas necesarias. A continuación se detalla cómo hacerlo.
 
- 	1) Conéctate a tu servidor MySQL y ejecuta:
+  1) Conéctate a tu servidor MySQL y ejecuta:
 
- 	 CREATE DATABASE sistema_evaluaciones;
-	 USE sistema_evaluaciones;
+	 	 CREATE DATABASE sistema_evaluaciones;
+		 USE sistema_evaluaciones;
 
- 	2) Crear las tablas necesarias
+  2) Crear las tablas necesarias
   
-	 CREATE TABLE pregunta (
-	     Id INT AUTO_INCREMENT PRIMARY KEY,
-	     Pregunta VARCHAR(255) NOT NULL,
-	     Respuesta1 VARCHAR(255) NOT NULL,
-	     Respuesta2 VARCHAR(255) NOT NULL,
-	     Respuesta3 VARCHAR(255) NOT NULL,
-	     Respuesta4 VARCHAR(255) NOT NULL,
-	     RespuestaCorrecta VARCHAR(255) NOT NULL,
-	     NivelBloom VARCHAR(50) NOT NULL,
-	     Tiempo INT
-	 );
+		 CREATE TABLE pregunta (
+		     Id INT AUTO_INCREMENT PRIMARY KEY,
+		     Pregunta VARCHAR(255) NOT NULL,
+		     Respuesta1 VARCHAR(255) NOT NULL,
+		     Respuesta2 VARCHAR(255) NOT NULL,
+		     Respuesta3 VARCHAR(255) NOT NULL,
+		     Respuesta4 VARCHAR(255) NOT NULL,
+		     RespuestaCorrecta VARCHAR(255) NOT NULL,
+		     NivelBloom VARCHAR(50) NOT NULL,
+		     Tiempo INT
+		 );
 
- 	4) Configurar conexión en el código
+  4) Configurar conexión en el código
   
 	 En el método "Conexión.java" asegúrate de que los datos de conexión coincidan con tu entorno local:
 
@@ -87,7 +87,7 @@ Este es un sistema de evaluación educativa desarrollado en Java utilizando Swin
 	 	 String user = "[Usuario]";
 		 String password = "[Contraseña]";
 
-   	5) Ejemplos de preguntas
+ 5) Ejemplos de preguntas
       	
 	    	-- VERDADERO/FALSO
 		INSERT INTO preguntas (Pregunta, Respuesta1, Respuesta2, Respuesta3, Respuesta4, RespuestaCorrecta, NivelBloom, Tiempo) VALUES
