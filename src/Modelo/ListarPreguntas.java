@@ -19,8 +19,8 @@ public class ListarPreguntas {
     modelo.addColumn("RESPUESTA3");
     modelo.addColumn("RESPUESTA4");
     modelo.addColumn("RESPUESTA CORRECTA");
-    modelo.addColumn("Tiempo");
-    modelo.addColumn("NivelBloom");
+    modelo.addColumn("TIEMPO");
+    modelo.addColumn("NIVEL BLOOM");
 
     String consulta="SELECT * FROM pregunta";
 
@@ -46,7 +46,7 @@ public class ListarPreguntas {
       TABLA.setModel(modelo);
       cn.close();
     }catch(Exception e){
-       System.out.print("Error "+e);
+       System.out.print("Error al mostrar Preguntas "+e);
     }
 
 

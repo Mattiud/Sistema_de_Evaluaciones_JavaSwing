@@ -66,17 +66,17 @@
                           </Group>
                       </Group>
                       <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="362" max="-2" attributes="0"/>
+                          <EmptySpace pref="362" max="32767" attributes="0"/>
                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="TXTNUM" min="-2" pref="24" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="362" max="32767" attributes="0"/>
+                          <EmptySpace pref="362" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Component id="TXTPREGUNTA" min="-2" pref="440" max="-2" attributes="0"/>
                       <Group type="102" alignment="1" attributes="0">
@@ -100,7 +100,7 @@
                           <Component id="TXTRESPUESTA1" min="-2" pref="440" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="213" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -117,23 +117,23 @@
                   <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                   <Component id="TXTPREGUNTA" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="TXTRESPUESTA1" min="-2" max="-2" attributes="0"/>
-                      <Component id="BTNRESPUESTA1" min="-2" pref="32" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="BTNRESPUESTA1" pref="32" max="32767" attributes="0"/>
+                      <Component id="TXTRESPUESTA1" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="BTNRESPUESTA2" min="-2" pref="32" max="-2" attributes="0"/>
-                      <Component id="TXTRESPUESTA2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="BTNRESPUESTA2" pref="32" max="32767" attributes="0"/>
+                      <Component id="TXTRESPUESTA2" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="BTNRESPUESTA3" min="-2" pref="32" max="-2" attributes="0"/>
-                      <Component id="TXTRESPUESTA3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="BTNRESPUESTA3" pref="32" max="32767" attributes="0"/>
+                      <Component id="TXTRESPUESTA3" max="32767" attributes="0"/>
                   </Group>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="25" pref="128" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="BTNSIG" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                               <Component id="BTNANT" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
@@ -142,9 +142,9 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="TXTRESPUESTA4" min="-2" max="-2" attributes="0"/>
-                              <Component id="BTNRESPUESTA4" min="-2" pref="32" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="BTNRESPUESTA4" pref="32" max="32767" attributes="0"/>
+                              <Component id="TXTRESPUESTA4" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>

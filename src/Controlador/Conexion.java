@@ -15,7 +15,7 @@ public class Conexion {
          cn = (Connection)DriverManager.getConnection(url,user,password);
          System.out.println("Conexion Exitosa");
         }catch(Exception e){
-         System.err.println("Error "+e.getMessage());
+         System.err.println("Error de Conexion: "+e.getMessage());
         }
         return cn;
     }

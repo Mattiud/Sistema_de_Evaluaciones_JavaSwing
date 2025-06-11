@@ -38,7 +38,7 @@ public class ListarCreacion {
       TABLAPREGUNTAS.setModel(modelo);
       cn.close();
     }catch(Exception e){
-       System.out.print("Error "+e);
+       System.out.print("Error al mostrar en TABLACREACION "+e);
     }
 
 

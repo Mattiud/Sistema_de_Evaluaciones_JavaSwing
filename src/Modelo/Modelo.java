@@ -25,7 +25,7 @@ public class Modelo {
     cn.close();
     JOptionPane.showMessageDialog(null,"Registro Guardado");
    }catch(Exception e){
-    JOptionPane.showMessageDialog(null,"Error "+e);
+    JOptionPane.showMessageDialog(null,"Error Registro BD "+e);
    }
   }
   public void ModificarBD(Pregunta p){
@@ -46,7 +46,7 @@ public class Modelo {
     cn.close();
     JOptionPane.showMessageDialog(null,"Registro Actualizado ");
    }catch(Exception e){
-    JOptionPane.showMessageDialog(null,"Error "+e);
+    JOptionPane.showMessageDialog(null,"Error de Actualizacion BD "+e);
    }
   }
   public void EliminarBD(Pregunta p){
@@ -58,7 +58,7 @@ public class Modelo {
     cn.close();
     JOptionPane.showMessageDialog(null,"Registro Eliminado ");
    }catch(Exception e){
-    JOptionPane.showMessageDialog(null,"Error "+e);
+    JOptionPane.showMessageDialog(null,"Error Eliminando Registro "+e);
    }
   }
 }
