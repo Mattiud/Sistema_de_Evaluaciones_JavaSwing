@@ -3,7 +3,7 @@
 Sistema de Evaluaciones (Java Swing)
 
 -----------------
-1. Descripción
+1.Descripción
 
 Este es un sistema de evaluación educativa desarrollado en Java utilizando Swing. La aplicación permite crear y rendir exámenes con preguntas de opción múltiple y verdadero/falso, basados en la taxonomía de Bloom. Los exámenes se cargan desde una Base de Datos, y durante la evaluación el sistema registra las respuestas del usuario, calcula el puntaje final y muestra un resumen al finalizar.
 
