@@ -67,7 +67,7 @@ Este es un sistema de evaluación educativa desarrollado en Java utilizando Swin
 
  	2) Crear las tablas necesarias
   
-	 CREATE TABLE preguntas (
+	 CREATE TABLE pregunta (
 	     Id INT AUTO_INCREMENT PRIMARY KEY,
 	     Pregunta VARCHAR(255) NOT NULL,
 	     Respuesta1 VARCHAR(255) NOT NULL,
