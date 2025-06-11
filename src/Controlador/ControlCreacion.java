@@ -44,7 +44,12 @@ public class ControlCreacion implements ActionListener {
         for (PreguntaExamen pe : preguntaSeleccionada) {
             total += pe.getTiempo();
         }
-        ic.TXTTIEMPOTOTAL.setText(String.valueOf(total));
+        
+        int minutos = total / 60;
+        int segundos = total % 60;
+        String tiempototal = minutos+":"+segundos;
+        ic.TXTTIEMPOTOTAL.setText(tiempototal);
+                
     }
 
 
@@ -83,9 +88,9 @@ public class ControlCreacion implements ActionListener {
     private void actualizarTablaSeleccionadas() {
         javax.swing.table.DefaultTableModel modelo = new javax.swing.table.DefaultTableModel();
         modelo.addColumn("ID");
-        modelo.addColumn("Pregunta");
-        modelo.addColumn("Tiempo");
-        modelo.addColumn("NivelBloom");
+        modelo.addColumn("PREGUNTA");
+        modelo.addColumn("TIEMPO");
+        modelo.addColumn("NIVEL DE BLOOM");
 
         for (PreguntaExamen pe : preguntaSeleccionada) {
             Object[] fila = {

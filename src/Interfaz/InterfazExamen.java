@@ -171,15 +171,17 @@ public class InterfazExamen extends javax.swing.JFrame {
         setTitle("EXAMEN");
         setLocationByPlatform(true);
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel1.setBackground(new java.awt.Color(236, 239, 241));
 
-        BTNANT.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        BTNANT.setBackground(new java.awt.Color(176, 190, 197));
+        BTNANT.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         BTNANT.setText("ANTERIOR");
 
-        BTNSIG.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        BTNSIG.setBackground(new java.awt.Color(67, 160, 71));
+        BTNSIG.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         BTNSIG.setText("SIGUIENTE");
 
-        BTNRESPUESTA1.setBackground(new java.awt.Color(204, 204, 204));
+        BTNRESPUESTA1.setBackground(new java.awt.Color(236, 239, 241));
         BTNRESPGROUP.add(BTNRESPUESTA1);
         BTNRESPUESTA1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         BTNRESPUESTA1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -189,12 +191,12 @@ public class InterfazExamen extends javax.swing.JFrame {
             }
         });
 
-        BTNRESPUESTA2.setBackground(new java.awt.Color(204, 204, 204));
+        BTNRESPUESTA2.setBackground(new java.awt.Color(236, 239, 241));
         BTNRESPGROUP.add(BTNRESPUESTA2);
         BTNRESPUESTA2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         BTNRESPUESTA2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        BTNRESPUESTA3.setBackground(new java.awt.Color(204, 204, 204));
+        BTNRESPUESTA3.setBackground(new java.awt.Color(236, 239, 241));
         BTNRESPGROUP.add(BTNRESPUESTA3);
         BTNRESPUESTA3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         BTNRESPUESTA3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -204,18 +206,18 @@ public class InterfazExamen extends javax.swing.JFrame {
             }
         });
 
-        BTNRESPUESTA4.setBackground(new java.awt.Color(204, 204, 204));
+        BTNRESPUESTA4.setBackground(new java.awt.Color(236, 239, 241));
         BTNRESPGROUP.add(BTNRESPUESTA4);
         BTNRESPUESTA4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         BTNRESPUESTA4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         TXTRESPUESTA1.setEditable(false);
-        TXTRESPUESTA1.setBackground(new java.awt.Color(204, 204, 204));
+        TXTRESPUESTA1.setBackground(new java.awt.Color(236, 239, 241));
         TXTRESPUESTA1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         TXTRESPUESTA1.setBorder(null);
 
         TXTRESPUESTA2.setEditable(false);
-        TXTRESPUESTA2.setBackground(new java.awt.Color(204, 204, 204));
+        TXTRESPUESTA2.setBackground(new java.awt.Color(236, 239, 241));
         TXTRESPUESTA2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         TXTRESPUESTA2.setBorder(null);
         TXTRESPUESTA2.addActionListener(new java.awt.event.ActionListener() {
@@ -225,25 +227,27 @@ public class InterfazExamen extends javax.swing.JFrame {
         });
 
         TXTRESPUESTA3.setEditable(false);
-        TXTRESPUESTA3.setBackground(new java.awt.Color(204, 204, 204));
+        TXTRESPUESTA3.setBackground(new java.awt.Color(236, 239, 241));
         TXTRESPUESTA3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         TXTRESPUESTA3.setBorder(null);
 
         TXTRESPUESTA4.setEditable(false);
-        TXTRESPUESTA4.setBackground(new java.awt.Color(204, 204, 204));
+        TXTRESPUESTA4.setBackground(new java.awt.Color(236, 239, 241));
         TXTRESPUESTA4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         TXTRESPUESTA4.setBorder(null);
 
         TXTPREGUNTA.setEditable(false);
-        TXTPREGUNTA.setBackground(new java.awt.Color(204, 204, 204));
+        TXTPREGUNTA.setBackground(new java.awt.Color(236, 239, 241));
         TXTPREGUNTA.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         TXTPREGUNTA.setBorder(null);
 
+        jLabel2.setBackground(new java.awt.Color(236, 239, 241));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(13, 71, 161));
         jLabel2.setText("PREGUNTA");
 
         TXTNUM.setEditable(false);
-        TXTNUM.setBackground(new java.awt.Color(204, 204, 204));
+        TXTNUM.setBackground(new java.awt.Color(236, 239, 241));
         TXTNUM.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         TXTNUM.setBorder(null);
         TXTNUM.addActionListener(new java.awt.event.ActionListener() {
@@ -251,6 +255,10 @@ public class InterfazExamen extends javax.swing.JFrame {
                 TXTNUMActionPerformed(evt);
             }
         });
+
+        PROGRESO.setBackground(new java.awt.Color(224, 224, 224));
+        PROGRESO.setForeground(new java.awt.Color(33, 150, 243));
+        PROGRESO.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -271,10 +279,10 @@ public class InterfazExamen extends javax.swing.JFrame {
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(TXTNUM, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 362, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 172, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(TXTPREGUNTA, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -406,20 +414,20 @@ public class InterfazExamen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BTNANT;
+    public javax.swing.JButton BTNANT;
     public javax.swing.ButtonGroup BTNRESPGROUP;
-    private javax.swing.JRadioButton BTNRESPUESTA1;
-    private javax.swing.JRadioButton BTNRESPUESTA2;
-    private javax.swing.JRadioButton BTNRESPUESTA3;
-    private javax.swing.JRadioButton BTNRESPUESTA4;
-    private javax.swing.JButton BTNSIG;
+    public javax.swing.JRadioButton BTNRESPUESTA1;
+    public javax.swing.JRadioButton BTNRESPUESTA2;
+    public javax.swing.JRadioButton BTNRESPUESTA3;
+    public javax.swing.JRadioButton BTNRESPUESTA4;
+    public javax.swing.JButton BTNSIG;
     private javax.swing.JProgressBar PROGRESO;
-    private javax.swing.JTextField TXTNUM;
-    private javax.swing.JTextField TXTPREGUNTA;
-    private javax.swing.JTextField TXTRESPUESTA1;
-    private javax.swing.JTextField TXTRESPUESTA2;
-    private javax.swing.JTextField TXTRESPUESTA3;
-    private javax.swing.JTextField TXTRESPUESTA4;
+    public javax.swing.JTextField TXTNUM;
+    public javax.swing.JTextField TXTPREGUNTA;
+    public javax.swing.JTextField TXTRESPUESTA1;
+    public javax.swing.JTextField TXTRESPUESTA2;
+    public javax.swing.JTextField TXTRESPUESTA3;
+    public javax.swing.JTextField TXTRESPUESTA4;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables

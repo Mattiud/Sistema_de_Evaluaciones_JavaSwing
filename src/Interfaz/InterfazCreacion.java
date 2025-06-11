@@ -61,7 +61,6 @@ public class InterfazCreacion extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         TXTTIEMPOTOTAL = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
         BTNINICIAR = new javax.swing.JButton();
         BTNSELECT = new javax.swing.JButton();
         BTNELIMPREG = new javax.swing.JButton();
@@ -70,15 +69,16 @@ public class InterfazCreacion extends javax.swing.JFrame {
         TABLAPREGUNTAS = new javax.swing.JTable();
         jScrollPane2 = new javax.swing.JScrollPane();
         TABLAPREGSELECT = new javax.swing.JTable();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Creacion de Examen");
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel1.setBackground(new java.awt.Color(224, 224, 224));
 
         TXTTIEMPOTOTAL.setEditable(false);
-        TXTTIEMPOTOTAL.setBackground(new java.awt.Color(204, 204, 204));
-        TXTTIEMPOTOTAL.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        TXTTIEMPOTOTAL.setBackground(new java.awt.Color(224, 224, 224));
+        TXTTIEMPOTOTAL.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         TXTTIEMPOTOTAL.setBorder(null);
         TXTTIEMPOTOTAL.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,27 +86,31 @@ public class InterfazCreacion extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
-        jLabel1.setText("SEGUNDOS");
-
+        BTNINICIAR.setBackground(new java.awt.Color(67, 160, 71));
         BTNINICIAR.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         BTNINICIAR.setText("Iniciar Examen");
-        BTNINICIAR.setBorder(new javax.swing.border.MatteBorder(null));
+        BTNINICIAR.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
-        BTNSELECT.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        BTNSELECT.setBackground(new java.awt.Color(25, 118, 210));
+        BTNSELECT.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         BTNSELECT.setText("Seleccionar Pregunta");
+        BTNSELECT.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         BTNSELECT.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        BTNELIMPREG.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        BTNELIMPREG.setBackground(new java.awt.Color(229, 115, 115));
+        BTNELIMPREG.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         BTNELIMPREG.setText("Eliminar Pregunta");
+        BTNELIMPREG.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         BTNELIMPREG.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         BTNELIMPREG.setMaximumSize(new java.awt.Dimension(157, 27));
         BTNELIMPREG.setMinimumSize(new java.awt.Dimension(157, 27));
         BTNELIMPREG.setPreferredSize(new java.awt.Dimension(157, 27));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
-        jLabel2.setText("Tiempo Total");
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel2.setText("Tiempo Total:");
 
+        TABLAPREGUNTAS.setBackground(new java.awt.Color(249, 249, 249));
+        TABLAPREGUNTAS.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         TABLAPREGUNTAS.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -115,11 +119,15 @@ public class InterfazCreacion extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ID", "PREGUNTA", "TIEMPO", "NIVEL DE BLOOM"
             }
         ));
+        TABLAPREGUNTAS.setGridColor(new java.awt.Color(102, 102, 102));
+        TABLAPREGUNTAS.setSelectionBackground(new java.awt.Color(187, 222, 251));
         jScrollPane3.setViewportView(TABLAPREGUNTAS);
 
+        TABLAPREGSELECT.setBackground(new java.awt.Color(240, 240, 240));
+        TABLAPREGSELECT.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         TABLAPREGSELECT.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -128,60 +136,66 @@ public class InterfazCreacion extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ID", "PREGUNTA", "TIEMPO", "NIVEL DE BLOOM"
             }
         ));
+        TABLAPREGSELECT.setGridColor(new java.awt.Color(102, 102, 102));
+        TABLAPREGSELECT.setSelectionBackground(new java.awt.Color(187, 222, 251));
+        TABLAPREGSELECT.setShowGrid(true);
         jScrollPane2.setViewportView(TABLAPREGSELECT);
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
+        jLabel3.setText("(Minutos : Segundos)");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(41, 41, 41)
+                        .addGap(47, 47, 47)
                         .addComponent(BTNSELECT, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(BTNELIMPREG, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(79, 79, 79))
+                        .addGap(73, 73, 73)
+                        .addComponent(BTNELIMPREG, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 493, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(128, 128, 128)
-                                .addComponent(jLabel2)
-                                .addGap(18, 18, 18)
-                                .addComponent(TXTTIEMPOTOTAL, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel1))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(164, 164, 164)
-                                .addComponent(BTNINICIAR, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(40, 40, 40)))
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 710, Short.MAX_VALUE)
+                        .addContainerGap()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 493, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(155, 155, 155)
+                        .addComponent(BTNINICIAR, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(68, 68, 68)
+                        .addComponent(jLabel2)
+                        .addGap(18, 18, 18)
+                        .addComponent(TXTTIEMPOTOTAL, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel3)))
+                .addGap(51, 51, 51)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 699, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(36, 36, 36)
+                .addGap(53, 53, 53)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TXTTIEMPOTOTAL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
-                .addGap(42, 42, 42)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BTNSELECT)
-                    .addComponent(BTNELIMPREG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(BTNELIMPREG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BTNSELECT, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(BTNINICIAR, javax.swing.GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)
-                .addGap(13, 13, 13))
-            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 647, Short.MAX_VALUE)
+                .addGap(60, 60, 60)
+                .addComponent(BTNINICIAR, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(59, 59, 59))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane3)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -247,9 +261,9 @@ public class InterfazCreacion extends javax.swing.JFrame {
     public javax.swing.JTable TABLAPREGSELECT;
     public javax.swing.JTable TABLAPREGUNTAS;
     public javax.swing.JTextField TXTTIEMPOTOTAL;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jLabel3;
+    public javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     // End of variables declaration//GEN-END:variables
